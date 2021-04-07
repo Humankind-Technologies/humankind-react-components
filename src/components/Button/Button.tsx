@@ -15,5 +15,6 @@ const paddingSizes: { [key in ButtonPropsSize] : number; } = {
 const paddingSize = (size?:ButtonPropsSize):string => `${paddingSizes[size || 'medium']}px`
 
 export default  styled.button<ButtonProps>`
+      background: none; 
       padding: ${props => paddingSize(props.size)};
     `;
